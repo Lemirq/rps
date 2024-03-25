@@ -8,10 +8,9 @@ const Game = () => {
 	const { userPick, computerPick, setComputerPick, result, setResult, setScore, score } = useStore((state) => state);
 
 	const comparePicks = () => {
-		const picks = ['r', 'p', 's'];
-		const computerPick = picks[Math.floor(Math.random() * picks.length)];
+		const picks: Array<'r' | 'p' | 's'> = ['r', 'p', 's'];
+		const computerPick: 'r' | 'p' | 's' = picks[Math.floor(Math.random() * picks.length)];
 		setComputerPick(computerPick);
-		let res = '';
 		setTimeout(() => {
 			console.log(userPick, computerPick);
 			if (userPick && computerPick) {

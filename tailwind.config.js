@@ -3,6 +3,13 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
+			screens: {
+				'2xl-m': { max: '1535px' },
+				'xl-m': { max: '1279px' },
+				'lg-m': { max: '1023px' },
+				'md-m': { max: '767px' },
+				'sm-m': { max: '639px' },
+			},
 			colors: {
 				'scissors-gradient': 'hsl(39, 89%, 49%)',
 				'scissors-gradient-to': 'hsl(40, 84%, 53%)',
