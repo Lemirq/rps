@@ -31,7 +31,7 @@ const App: FC = () => {
 				<Header />
 				<AnimatePresence mode="wait">{!userPick ? <Pick /> : <Game />}</AnimatePresence>
 			</animated.div>
-			<div className="fc sm:fr font-barlow absolute bottom-0 left-0 right-0 gap-3 sm:justify-end p-9 text-white">
+			<div className="fr font-barlow absolute bottom-0 left-0 right-0 gap-3 sm:justify-end p-9 text-white">
 				<button onClick={showModal} className="border-off-white rounded-lg border px-10 py-2 uppercase tracking-[.1em]">
 					Rules
 				</button>
