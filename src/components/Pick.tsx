@@ -8,7 +8,7 @@ const Pick = () => {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 			transition={{ duration: 0.3 }}
-			className="fc mt-20 gap-5 bg-[url('/images/bg-triangle.svg')] bg-center bg-no-repeat sm-m:bg-contain"
+			className={`fc mt-20 gap-5 bg-[url('https://lemirq.github.io/rps/images/bg-triangle.svg')] bg-center bg-no-repeat sm-m:bg-contain`}
 		>
 			<div className="fr gap-20 -translate-y-7 sm:translate-y-0">
 				<Button type="p" />

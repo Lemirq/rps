@@ -15,7 +15,7 @@ const Rules: FC = () => {
 			<div className="p-10 m-5 bg-white rounded-2xl relative gap-5 fc">
 				<div className="fr justify-between w-full">
 					<h3 className="font-barlow font-bold uppercase text-3xl">rules</h3>
-					<img className="cursor-pointer" alt="close icon" src="/images/icon-close.svg" onClick={hideModal} />
+					<img className="cursor-pointer" alt="close icon" src="https://lemirq.github.io/rps/images/icon-close.svg" onClick={hideModal} />
 				</div>
 				<svg xmlns="http://www.w3.org/2000/svg" width="304" height="270">
 					<defs>

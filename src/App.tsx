@@ -31,10 +31,15 @@ const App: FC = () => {
 				<Header />
 				<AnimatePresence mode="wait">{!userPick ? <Pick /> : <Game />}</AnimatePresence>
 			</animated.div>
-			<div className="fr font-barlow absolute bottom-0 left-0 right-0 sm:justify-end p-9 text-white">
+			<div className="fc sm:fr font-barlow absolute bottom-0 left-0 right-0 gap-3 sm:justify-end p-9 text-white">
 				<button onClick={showModal} className="border-off-white rounded-lg border px-10 py-2 uppercase tracking-[.1em]">
 					Rules
 				</button>
+				<a href="https://lemirq.github.io" target="blank">
+					<button className="border-off-white fr gap-2 rounded-lg border px-5 py-2 uppercase tracking-[.1em]">
+						Made by <img src="https://lemirq.github.io/images/logo-white.png" className="w-5" alt="" />
+					</button>
+				</a>
 			</div>
 		</div>
 	);

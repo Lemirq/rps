@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useStore } from '../contextStore';
-
 interface Props {
 	type: 'r' | 'p' | 's' | null;
 	disabled?: boolean;
@@ -24,7 +23,11 @@ const Button: FC<Props> = ({ type, disabled, empty }) => {
 	};
 
 	const getImg = () => {
-		return type === 'r' ? '/images/icon-rock.svg' : type === 's' ? '/images/icon-scissors.svg' : '/images/icon-paper.svg';
+		return type === 'r'
+			? 'https://lemirq.github.io/rps/images/icon-rock.svg'
+			: type === 's'
+			? 'https://lemirq.github.io/rps/images/icon-scissors.svg'
+			: 'https://lemirq.github.io/rps/images/icon-paper.svg';
 	};
 	return (
 		<AnimatePresence>
